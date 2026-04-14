@@ -1,0 +1,124 @@
+job_title,skills
+Data Scientist,python machine learning statistics pandas numpy
+ML Engineer,python scikit-learn ml deployment
+AI Engineer,python deep learning tensorflow keras
+Web Developer,html css javascript flask react
+Backend Developer,python flask django mysql api
+Frontend Developer,html css javascript react ui
+Full Stack Developer,html css javascript python flask mysql
+Software Engineer,java python data structures algorithms
+Database Administrator,mysql sql database management backup
+Data Analyst,python pandas excel data visualization
+Cloud Engineer,aws azure cloud deployment linux
+DevOps Engineer,linux docker kubernetes ci cd
+Cyber Security Analyst,network security ethical hacking
+Network Engineer,computer networks routing switching
+Mobile App Developer,android kotlin java mobile development
+Android Developer,android studio java kotlin
+iOS Developer,swift ios mobile apps
+Game Developer,unity c sharp game development
+Embedded Engineer,embedded systems c microcontroller
+IoT Engineer,iot sensors raspberry pi arduino
+Blockchain Developer,blockchain solidity smart contracts
+AR VR Developer,augmented reality virtual reality unity
+Big Data Engineer,hadoop spark big data processing
+Business Analyst,business analysis documentation sql
+System Administrator,linux windows server administration
+QA Engineer,software testing manual automation
+Automation Tester,selenium python automation testing
+UI UX Designer,ui ux figma design prototyping
+Graphic Designer,photoshop illustrator graphic design
+Digital Marketing Executive,seo social media marketing
+Content Writer,content writing blogging seo
+SEO Specialist,search engine optimization analytics
+Social Media Manager,social media marketing branding
+Product Manager,product management agile scrum
+Project Manager,project management agile planning
+Scrum Master,agile scrum methodology
+HR Executive,human resource recruitment
+HR Manager,hr management payroll compliance
+Recruiter,talent acquisition interviewing
+Technical Support Engineer,technical support troubleshooting
+IT Support Engineer,it support hardware software
+Help Desk Technician,help desk troubleshooting
+Data Engineer,python sql data pipelines
+Research Scientist,research data analysis ml
+Professor,teaching research academic
+Lecturer,education teaching subject expertise
+Tutor,online teaching mentoring
+Training Manager,corporate training development
+Sales Executive,sales communication negotiation
+Sales Manager,sales strategy team management
+Marketing Manager,marketing strategy branding
+Operations Manager,operations management process
+Supply Chain Analyst,supply chain logistics
+Logistics Manager,logistics planning inventory
+Finance Analyst,finance analysis accounting
+Accountant,accounting taxation auditing
+Chartered Accountant,financial auditing taxation
+Investment Analyst,investment analysis markets
+Banking Officer,banking finance operations
+Credit Analyst,credit risk assessment
+Insurance Advisor,insurance sales policy
+Actuarial Analyst,actuarial statistics risk
+Economist,economic analysis forecasting
+Statistician,statistics probability data analysis
+Mathematician,mathematics problem solving
+Physics Researcher,physics research simulation
+Chemistry Analyst,chemical analysis laboratory
+Biotechnology Engineer,biotech research lab
+Biomedical Engineer,medical devices biomedical
+Pharmacist,pharmacy medicine dispensing
+Medical Coder,medical coding healthcare
+Healthcare Analyst,healthcare data analysis
+Hospital Administrator,hospital management
+Clinical Research Associate,clinical trials research
+Psychologist,psychology counseling therapy
+Counselor,counseling mental health
+Sociologist,social research analysis
+GIS Analyst,gis mapping spatial analysis
+Environmental Scientist,environmental analysis sustainability
+Civil Engineer,civil engineering construction
+Mechanical Engineer,mechanical design autocad
+Electrical Engineer,electrical systems power
+Electronics Engineer,electronics circuits embedded
+Chemical Engineer,chemical process engineering
+Industrial Engineer,industrial optimization processes
+Automobile Engineer,automobile design systems
+Aerospace Engineer,aerospace engineering design
+Robotics Engineer,robotics automation ai
+Nanotechnology Researcher,nanotechnology research
+Food Technologist,food processing quality
+Agriculture Officer,agriculture management farming
+Dairy Technologist,dairy processing technology
+Veterinary Doctor,veterinary animal health
+Zoologist,zoology animal research
+Botanist,botany plant research
+Geologist,geology earth science
+Meteorologist,weather forecasting climate
+Oceanographer,oceanography marine science
+Astrophysicist,astrophysics space research
+Space Scientist,space science satellite
+Data Entry Operator,data entry typing excel
+Office Administrator,office administration documentation
+Clerk,clerical office work
+Receptionist,reception customer handling
+Customer Support Executive,customer support communication
+Call Center Executive,call center voice support
+Operations Executive,operations coordination
+Business Development Executive,business development sales
+Entrepreneur,startup business innovation
+Startup Founder,entrepreneurship leadership
+Consultant,business consulting analysis
+Management Trainee,management training
+Intern,internship learning skills
+Freelancer,freelance project work
+Remote Software Developer,remote programming collaboration
+AI Research Intern,ai research experimentation
+ML Research Intern,ml research modeling
+Data Science Intern,data science internship
+Web Development Intern,web development internship
+Cyber Security Intern,cyber security internship
+Cloud Intern,cloud computing internship
+DevOps Intern,devops tools internship
+```

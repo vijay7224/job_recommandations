@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Job Recommender</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #1d2671, #c33764);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar */
+        nav {
+            background: rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(10px);
+            padding: 18px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd369;
+        }
+
+        /* Hero Section */
+        .hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 80px 20px 100px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 720px;
+            margin-bottom: 45px;
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+
+        /* Buttons with Enhanced Hover Effects */
+        .hero .buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .hero .buttons a {
+            text-decoration: none;
+            padding: 16px 36px;
+            border-radius: 50px;
+            font-size: 17px;
+            font-weight: 600;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Primary Button */
+        .hero .buttons a.primary {
+            background: #ffd369;
+            color: #1d2671;
+            box-shadow: 0 8px 20px rgba(255, 211, 105, 0.4);
+        }
+
+        .hero .buttons a.primary:hover {
+            background: #fff;
+            color: #1d2671;
+            transform: translateY(-6px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(255, 211, 105, 0.5);
+        }
+
+        /* Secondary Button */
+        .hero .buttons a.secondary {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero .buttons a.secondary:hover {
+            background: #fff;
+            color: #1d2671;
+            transform: translateY(-6px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.4);
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            nav ul {
+                gap: 20px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+            
+            .hero p {
+                font-size: 17px;
+            }
+
+            .hero .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">AI Job Recommender</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/recommend">Job Recommendation</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>AI Based Job Recommendation System</h1>
+        <p>
+            Find the best job opportunities tailored to your skills using Artificial Intelligence.<br>
+            Our system analyzes your resume and recommends the most suitable jobs for your career growth.
+        </p>
+        <div class="buttons">
+            <a href="/recommend" class="primary">Upload Resume & Get Recommendations</a>
+            <a href="/job" class="secondary">Browse All Jobs</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 AI Based Job Recommendation System | Vijay Suryawanshi
+    </footer>
+
+</body>
+</html>

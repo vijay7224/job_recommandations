@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #1d2671, #c33764);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            padding: 40px 35px;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 440px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 32px;
+            font-size: 28px;
+            color: #1d2671;
+        }
+
+        .form-group {
+            margin-bottom: 22px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #c33764;
+            box-shadow: 0 0 0 4px rgba(195, 55, 100, 0.15);
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(to right, #1d2671, #c33764);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(195, 55, 100, 0.3);
+        }
+
+        .footer-links {
+            margin-top: 25px;
+            font-size: 14.5px;
+        }
+
+        .footer-links a {
+            color: #c33764;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .error {
+            background-color: #fee;
+            color: #c00;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            display: none;
+        }
+
+        /* Password strength indicator (optional) */
+        #passwordStrength {
+            height: 5px;
+            margin-top: 8px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Registration</h2>
+        
+        <div class="error" id="errorMessage"></div>
+
+        <form action="/register" method="POST" id="registerForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input 
+                    type="text" 
+                    id="username"
+                    name="username" 
+                    placeholder="Choose a username"
+                    required
+                    autocomplete="username">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input 
+                    type="email" 
+                    id="email"
+                    name="email" 
+                    placeholder="Enter your email"
+                    required
+                    autocomplete="email">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input 
+                    type="password" 
+                    id="password"
+                    name="password" 
+                    placeholder="Create a strong password"
+                    required
+                    autocomplete="new-password">
+                <div id="passwordStrength"></div>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <div class="footer-links">
+            <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('registerForm');
+        const passwordInput = document.getElementById('password');
+        const errorDiv = document.getElementById('errorMessage');
+        const strengthBar = document.getElementById('passwordStrength');
+
+        // Simple password strength indicator
+        passwordInput.addEventListener('input', function() {
+            const value = this.value;
+            let strength = 0;
+
+            if (value.length >= 6) strength += 30;
+            if (value.length >= 8) strength += 20;
+            if (/[A-Z]/.test(value)) strength += 15;
+            if (/[0-9]/.test(value)) strength += 15;
+            if (/[^A-Za-z0-9]/.test(value)) strength += 20;
+
+            strengthBar.style.width = strength + '%';
+            
+            if (strength < 40) strengthBar.style.backgroundColor = '#ff4757';
+            else if (strength < 70) strengthBar.style.backgroundColor = '#ffa502';
+            else strengthBar.style.backgroundColor = '#2ed573';
+        });
+
+        // Form validation
+        form.addEventListener('submit', function(e) {
+            const username = document.getElementById('username').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = passwordInput.value.trim();
+
+            if (!username || !email || !password) {
+                errorDiv.textContent = "All fields are required";
+                errorDiv.style.display = "block";
+                e.preventDefault();
+                return;
+            }
+
+            if (password.length < 6) {
+                errorDiv.textContent = "Password must be at least 6 characters long";
+                errorDiv.style.display = "block";
+                e.preventDefault();
+            } else {
+                errorDiv.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
