@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to right, #1d2671, #c33764);
+            background: linear-gradient(to right, #5661c1, #be2153);
             color: #fff;
             min-height: 100vh;
             display: flex;
@@ -82,7 +82,7 @@
             opacity: 0.95;
         }
 
-        /* Buttons with Enhanced Hover Effects */
+        /* Buttons */
         .hero .buttons {
             display: flex;
             gap: 20px;
@@ -101,7 +101,6 @@
             overflow: hidden;
         }
 
-        /* Primary Button */
         .hero .buttons a.primary {
             background: #ffd369;
             color: #1d2671;
@@ -115,7 +114,6 @@
             box-shadow: 0 15px 30px rgba(255, 211, 105, 0.5);
         }
 
-        /* Secondary Button */
         .hero .buttons a.secondary {
             background: transparent;
             color: #fff;
@@ -130,11 +128,188 @@
             box-shadow: 0 15px 30px rgba(255, 255, 255, 0.3);
         }
 
+        /* About Section */
+        .about {
+            padding: 100px 50px;
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+        .about .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #ffd369;
+        }
+
+        .about p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 60px;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+
+        .about .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .about .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px 30px;
+            border-radius: 20px;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255, 211, 105, 0.2);
+        }
+
+        .about .feature-card:hover {
+            transform: translateY(-15px);
+            background: rgba(255, 211, 105, 0.15);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .about .feature-card h3 {
+            font-size: 24px;
+            margin: 20px 0 15px;
+            color: #ffd369;
+        }
+
+        .about .feature-card p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 50px;
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        .contact .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .contact h2 {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 60px;
+            color: #ffd369;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 50px;
+            align-items: start;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-info h3 {
+            font-size: 26px;
+            margin-bottom: 25px;
+            color: #ffd369;
+        }
+
+        .contact-info p {
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .contact-info .info-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            font-size: 17px;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-form h3 {
+            font-size: 26px;
+            margin-bottom: 25px;
+            color: #ffd369;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 18px;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 140px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: #ffd369;
+            color: #1d2671;
+            border: none;
+            border-radius: 50px;
+            font-size: 17px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        .submit-btn:hover {
+            background: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 211, 105, 0.4);
+        }
+
         /* Footer */
         footer {
             background: rgba(0, 0, 0, 0.4);
             text-align: center;
-            padding: 20px;
+            padding: 25px;
             font-size: 14px;
             margin-top: auto;
         }
@@ -147,21 +322,27 @@
                 gap: 15px;
             }
             
-            nav ul {
-                gap: 20px;
-            }
+            nav ul { gap: 20px; }
 
-            .hero h1 {
-                font-size: 38px;
-            }
-            
-            .hero p {
-                font-size: 17px;
-            }
+            .hero h1 { font-size: 38px; }
+            .hero p { font-size: 17px; }
 
             .hero .buttons {
                 flex-direction: column;
                 align-items: center;
+            }
+
+            .about, .contact {
+                padding: 80px 20px;
+            }
+
+            .about h2, .contact h2 {
+                font-size: 36px;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
             }
         }
     </style>
@@ -175,7 +356,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="/login">Login</a></li>
             <li><a href="/register">Register</a></li>
-            <li><a href="/recommend">Job Recommendation</a></li>
+            
             <li><a href="/logout">Logout</a></li>
         </ul>
     </nav>
@@ -190,6 +371,82 @@
         <div class="buttons">
             <a href="/recommend" class="primary">Upload Resume & Get Recommendations</a>
             <a href="/job" class="secondary">Browse All Jobs</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>About Our AI Job Recommender</h2>
+            <p>
+                We are passionate about bridging the gap between talented professionals and their dream jobs. 
+                Our intelligent system uses advanced Artificial Intelligence and Machine Learning to understand your skills, 
+                experience, and career goals, then matches you with the most relevant opportunities in real-time.
+            </p>
+
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🎯 Smart Matching</h3>
+                    <p>Our AI analyzes your resume and compares it with thousands of job descriptions using NLP and similarity algorithms to give highly accurate recommendations.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🚀 Career Growth</h3>
+                    <p>Whether you're a fresher or an experienced professional, we help you discover roles that align with your aspirations and skill development path.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📊 Data Driven</h3>
+                    <p>Powered by cutting-edge machine learning models trained on real job market data, ensuring recommendations stay relevant to current industry trends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>We'd love to hear from you! Whether you have questions, feedback, or need support, feel free to reach out.</p>
+                    
+                    <div class="info-item">
+                        📧 <span><strong>Email:</strong> vijaysuryawanshi7224@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        📞 <span><strong>Phone:</strong> +91 7224029733</span>
+                    </div>
+                    <div class="info-item">
+                        📍 <span><strong>Address:</strong> Bhopal, Madhya Pradesh, India</span>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
